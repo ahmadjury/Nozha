@@ -50,7 +50,7 @@ Main Functions
 
 
 ## Responsive:
-<img src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" width="200" height="400" />
+<img src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" width="200" height="500" />
 --------------------------------------
 <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" width="200" height="360" />
 --------------------------------------
