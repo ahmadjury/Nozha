@@ -31,7 +31,7 @@ Main Functions
 ⚪ *Here this is the main page we show all the resorts thata school can reserve in.*
 
 
-![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277614049710130/Dribbble_Shot_HD.png?width=300&height=auto)
+![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277614049710130/Dribbble_Shot_HD.png?height='100')
 
 
 
