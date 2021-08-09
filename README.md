@@ -17,10 +17,9 @@ and you will have the ability to adopt the animal you like ,so you can give it t
 Main Functions 
 ------------ | 
 -Login & Registration 
--Show all pets and adoupt        
--Show  pets category's  
--Add a pet!
--Email Api
+-Show all resorts       
+-Show  school's reservations
+-reserve in a resort
 
 
 
@@ -41,31 +40,13 @@ Main Functions
 
 
 ## 3️⃣ Show  school reservations
-⚪ *Here in this page we will show the pet's categories and the most recent added pet!.*
+⚪ *Here in this page we will show the school's reservations list.*
 
 
-![pic](https://media.discordapp.net/attachments/854306930238291979/861968617166602250/in8yr_hse_irjrfe.JPG?width=752&height=369)
-
-
-
-
-
-## 4️⃣ Add a pet!
-⚪ *Here in this page you can add a pet!.*
-
-
-![pic](https://media.discordapp.net/attachments/854306930238291979/861968146982240276/zmzedjfnfdkjfnsdkjfED.JPG?width=747&height=369)
+![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277592457433158/Dribbble_Shot_HD_5.png)
 
 
 
-
-
-
-## 5️⃣ Email Api
-⚪ *In this function we send the user confirmation on his email.*
-
-
-![pic](https://media.discordapp.net/attachments/854310343722795019/861980562242535424/Screenshot_20210706-174250_Gmail.jpg?width=175&height=369)
 
 
 
@@ -77,13 +58,13 @@ Main Functions
 
 
 ## Team members :
-◻️ *Jad Dawani* 
+◻️ *Ahmad Jury* 
 
-◻️ *Hani khmais*
+◻️ *Dara Rawaghba*
 
-◻️ *Fatima heh*
+◻️ *Fatima Alheeh*
 
-◻️ *Fatima harahsheh*
+◻️ *Hani Khamees*
 
 
 ## Contact us on :
