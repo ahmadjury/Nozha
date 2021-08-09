@@ -24,7 +24,7 @@ Main Functions
 ⚪ *Here in this page of the login & Registertion.*
 *A user can choose to login or register as a school or as a resort*
 
-<img src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" width="400" height="400" />
+<img src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" width="400" height="500" />
 
 
 
@@ -40,7 +40,7 @@ Main Functions
 ## 3️⃣ Show  school reservations
 ⚪ *Here in this page we will show the school's reservations list.*
 
-<img src="https://cdn.discordapp.com/attachments/872084511721156642/874277592457433158/Dribbble_Shot_HD_5.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277592457433158/Dribbble_Shot_HD_5.png" width="400" height="400" />
+<img src="https://cdn.discordapp.com/attachments/872084511721156642/874277592457433158/Dribbble_Shot_HD_5.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277592457433158/Dribbble_Shot_HD_5.png" width="400" height="370" />
 
 
 
