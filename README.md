@@ -33,6 +33,8 @@ When the facility accept the school’s request it will send them an email which
 ------------ | 
 -We have 2 types of users:
 **School Users:**
+
+
 -**Attributes:**
 - Name
 - City
