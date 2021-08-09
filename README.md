@@ -5,7 +5,6 @@ MERN-project
 
 ![logo](https://cdn.discordapp.com/attachments/872084511721156639/874284069100339240/Group_15.png)
 
-# 🚩 NOZHA
  *jj.
 **NOZHA** is a webstie that nn.*
 
