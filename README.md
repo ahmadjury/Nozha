@@ -5,7 +5,7 @@ MERN-project
 
 ![logo](https://cdn.discordapp.com/attachments/872084511721156639/874284069100339240/Group_15.png)
 
- *jj.
+ *
 **NOZHA** is a platform that contains all entertainment/cultural places that schools would arrange tours to.
 We have 3 kinds of users: Admin, Facility, School.
 School User is authorized to view all facilities on our site, and request a reservation by specifying the date and number of students.
@@ -15,9 +15,9 @@ When the facility accept the school’s request it will send them an email which
 *
 
 
-## Our Main functions:
+# Our Main functions:
 
-**Main Functions **
+## Main Functions
 ------------ | 
 -Login & Registration 
 -Show all resorts       
@@ -25,60 +25,56 @@ When the facility accept the school’s request it will send them an email which
 -reserve in a resort
 
 
-## Requirements:
+# Requirements:
 
 **login/ registration for User (with validation):**
 ------------ | 
 -We have 2 types of users:
-# School Users:
+## School Users:
+-**Attributes:**
+-- Name
+- City
+- License Number (should be 9 unique numbers)
+- Email
+- Telephone Number
+- Password
+## Location Users:
 **Attributes:**
-Name
-City
-License Number (should be 9 unique numbers)
-Email
-Telephone Number
-Password
-# Location Users:
-**Attributes:**
-Name
-City
-License Number (should be 9 unique numbers)
-Email
-Telephone Number
-Password
-Capacity
+- Name
+- City
+- License Number (should be 9 unique numbers)
+- Email
+- Telephone Number
+- Password
+- Capacity
 
-# Home page:
-
-The homepage contains header (logo, home, services, about us, username, logout)
-Footer (copyrights, contact us, about us).
-In the main body we will have image carousel that alternate clickable locations photos.
-
-
-**Location page:**
+## Home page:
 ------------ | 
--When you click on the location’s photo (on the home page) it will redirect you to the Location page which contains
-( a school can make multiple requests for one location)
-a small paragraph about this place.
-A link that redirects you to request a reservation form.
+The homepage contains header (logo, home, services, about us, username, logout) Footer (copyrights, contact us, about us). In the main body we will have image carousel that alternate clickable locations photos.
 
-**Reservation Form:**
+
+## Location page:
 ------------ | 
-A Request that sent by a school to location to reserve a date.
+-When you click on the location’s photo (on the home page) it will redirect you to the Location page which contains ( a school can make multiple requests for one location) a small paragraph about this place. And a link that redirects you to request a reservation form.
+
+## Reservation Form:
+------------ | 
+-A Request that sent by a school to location to reserve a date.
 	a. date
 	b. number of visitors
 	c. status : pending by default
-School Profile:
-shows school’s information {name, contact info. .} 
-shows school requests.
-A school can delete any request prior to the due date 3 days at most. 
-Location Profile:
-shows locations information {name, contact info. .}.
-shows schools requests.
-location can accept or reject schools request.
-Support Chat:
-Users (School/ Location) can contact Nozhas support team – who are available 24/ 7) 
-Socket.io will be used to build the support chat. 
+
+## School Profile:
+------------ | 
+-shows school’s information {name, contact info. .} 
+-shows school requests.
+-A school can delete any request prior to the due date 3 days at most. Location Profile:
+-shows locations information {name, contact info. .}.
+-shows schools requests.
+-location can accept or reject schools request.
+## Support Chat:
+------------ | 
+- Users (School/ Location) can contact Nozhas support team – who are available 24/ 7) Socket.io will be used to build the support chat. 
 
 
 ##  1️⃣  Login & Regestraion 
