@@ -11,12 +11,13 @@ We have 3 kinds of users: Admin, Facility, School.
 School User is authorized to view all facilities on our site, and request a reservation by specifying the date and number of students.
 Facility User is authorized to add a facility, review schools’ request and accept or decline them.
 When the facility accept the school’s request it will send them an email which contains an offer letter to agree on different terms.
-**ozha** has a support team who are available 24/7 to answer your question on live chat.
+**Nozha** has a support team who are available 24/7 to answer your question on live chat.
 *
 
 
 ## Our Main functions:
-Main Functions 
+
+**Main Functions **
 ------------ | 
 -Login & Registration 
 -Show all resorts       
@@ -24,20 +25,21 @@ Main Functions
 -reserve in a resort
 
 
-Requirements:
+## Requirements:
 
-login/ registration for User (with validation):
-We have 2 types of users:
-School Users:
-Attributes:
+**login/ registration for User (with validation):**
+------------ | 
+-We have 2 types of users:
+# School Users:
+**Attributes:**
 Name
 City
 License Number (should be 9 unique numbers)
 Email
 Telephone Number
 Password
-Location Users:
-Attributes:
+# Location Users:
+**Attributes:**
 Name
 City
 License Number (should be 9 unique numbers)
@@ -46,7 +48,7 @@ Telephone Number
 Password
 Capacity
 
-Home page:
+# Home page:
 
 The homepage contains header (logo, home, services, about us, username, logout)
 Footer (copyrights, contact us, about us).
