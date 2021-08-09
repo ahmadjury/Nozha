@@ -13,9 +13,6 @@ in our website we will give you the privilege to save a soul, through our websit
 and you will have the ability to adopt the animal you like ,so you can give it the place and love they desrves 🏩.*
 
 
-![logo](https://media.discordapp.net/attachments/854306930238291979/861967083939299348/logoabstract.png?width=369&height=369)
-
-
 ## Our Main functions  🐪:
 Main Functions 
 ------------ | 
@@ -34,7 +31,7 @@ Main Functions
 ![pic](https://media.discordapp.net/attachments/854310343722795019/861977031243726918/kjaseujurytraejsjd.JPG?width=758&height=369)
 
 
-## 2️⃣ Show all pets and adoupt 
+## 2️⃣ Show all resorts
 ⚪ *Here in this page we show all the pets that you can adopt.*
 
 
@@ -42,7 +39,7 @@ Main Functions
 
 
 
-## 3️⃣ Show  pets categories   
+## 3️⃣ Show  school reservations
 ⚪ *Here in this page we will show the pet's categories and the most recent added pet!.*
 
 
