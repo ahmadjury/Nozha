@@ -52,17 +52,17 @@ Main Functions
 ## Responsive:
 Responsive
 ------------ | 
-- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png" width="200" height="400" />
 
-- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png" width="200" height="400" />
 - 
-- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png" width="200" height="400" />
 - 
-- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png" width="200" height="400" />
 - 
-- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283187361181696/Dribbble_Shot_HD_7.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283187361181696/Dribbble_Shot_HD_7.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/874283119832883250/874283187361181696/Dribbble_Shot_HD_7.png" data-canonical-src="https://cdn.discordapp.com/attachments/874283119832883250/874283187361181696/Dribbble_Shot_HD_7.png" width="200" height="400" />
 - 
-- <img src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_8.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_8.png" width="400" height="400" />
+- <img src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_8.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_8.png" width="200" height="400" />
 
 
 
