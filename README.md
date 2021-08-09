@@ -26,16 +26,17 @@ Main Functions
 
 
 ##  1️⃣  Login & Regestraion 
-⚪ *Here in this page we have the login & Registertion.*
+⚪ *Here in this page of the login & Registertion.*
+*A user can choose to login or register as a school or as a resort*
 
 ![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png)
 
 
 ## 2️⃣ Show all resorts
-⚪ *Here in this page we show all the pets that you can adopt.*
+⚪ *Here this is the main page we show all the resorts thata school can reserve in.*
 
 
-![pic](https://media.discordapp.net/attachments/854306930238291979/861968432480518204/ol4eiruj4woijmd.JPG?width=311&height=369)
+![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277614049710130/Dribbble_Shot_HD.png)
 
 
 
