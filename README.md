@@ -30,7 +30,7 @@ When the facility accept the school’s request it will send them an email which
 **login/ registration for User (with validation):**
 ------------ | 
 -We have 2 types of users:
-## School Users:
+- ## School Users:
 -**Attributes:**
 - Name
 - City
