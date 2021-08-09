@@ -17,7 +17,7 @@ When the facility accept the school’s request it will send them an email which
 
 # Our Main functions:
 
-## Main Functions
+**Main Functions**
 ------------ | 
 -Login & Registration 
 -Show all resorts       
@@ -32,7 +32,7 @@ When the facility accept the school’s request it will send them an email which
 -We have 2 types of users:
 ## School Users:
 -**Attributes:**
--- Name
+- Name
 - City
 - License Number (should be 9 unique numbers)
 - Email
@@ -48,23 +48,23 @@ When the facility accept the school’s request it will send them an email which
 - Password
 - Capacity
 
-## Home page:
+**Home page:**
 ------------ | 
 The homepage contains header (logo, home, services, about us, username, logout) Footer (copyrights, contact us, about us). In the main body we will have image carousel that alternate clickable locations photos.
 
 
-## Location page:
+**Location page:**
 ------------ | 
 -When you click on the location’s photo (on the home page) it will redirect you to the Location page which contains ( a school can make multiple requests for one location) a small paragraph about this place. And a link that redirects you to request a reservation form.
 
-## Reservation Form:
+**Reservation Form:**
 ------------ | 
 -A Request that sent by a school to location to reserve a date.
 	a. date
 	b. number of visitors
 	c. status : pending by default
 
-## School Profile:
+**School Profile:**
 ------------ | 
 -shows school’s information {name, contact info. .} 
 -shows school requests.
@@ -72,7 +72,7 @@ The homepage contains header (logo, home, services, about us, username, logout) 
 -shows locations information {name, contact info. .}.
 -shows schools requests.
 -location can accept or reject schools request.
-## Support Chat:
+**Support Chat:**
 ------------ | 
 - Users (School/ Location) can contact Nozhas support team – who are available 24/ 7) Socket.io will be used to build the support chat. 
 
