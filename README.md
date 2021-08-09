@@ -28,7 +28,7 @@ Main Functions
 ##  1️⃣  Login & Regestraion 
 ⚪ *Here in this page we have the login & Registertion.*
 
-![pic](https://media.discordapp.net/attachments/854310343722795019/861977031243726918/kjaseujurytraejsjd.JPG?width=758&height=369)
+![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png)
 
 
 ## 2️⃣ Show all resorts
