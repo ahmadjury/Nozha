@@ -9,7 +9,7 @@ MERN-project
 **NOZHA** is a webstie that nn.*
 
 
-## Our Main functions  🐪:
+## Our Main functions:
 Main Functions 
 ------------ | 
 -Login & Registration 
@@ -46,9 +46,15 @@ Main Functions
 
 
 
-
-
-
+## Responsive:
+Responsive
+------------ | 
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png?width=100&height=auto)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png?width=100&height=auto)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png?width=100&height=auto)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png?width=100&height=auto)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283187361181696/Dribbble_Shot_HD_7.png?width=100&height=auto)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283189173108756/Dribbble_Shot_HD_8.png?width=100&height=auto)
 
 
 
