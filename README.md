@@ -24,7 +24,8 @@ Main Functions
 ⚪ *Here in this page of the login & Registertion.*
 *A user can choose to login or register as a school or as a resort*
 
-![pic](https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png?width='200' height='auto')
+<img src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" data-canonical-src="https://cdn.discordapp.com/attachments/872084511721156642/874277606294433802/Dribbble_Shot_HD_2.png" width="200" height="400" />
+
 
 
 ## 2️⃣ Show all resorts
