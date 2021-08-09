@@ -52,7 +52,7 @@ Main Functions
 ## Responsive:
 Responsive
 ------------ | 
--![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png?width=100&height=100)
+-![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283326612062248/Dribbble_Shot_HD_6.png?width='100' height='100')
 -![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283178091765861/Dribbble_Shot_HD_11.png?width=100&height=100)
 -![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283181606592592/Dribbble_Shot_HD_10.png?width=100&height=100)
 -![pic](https://cdn.discordapp.com/attachments/874283119832883250/874283186174193684/Dribbble_Shot_HD_9.png?width=100&height=100)
