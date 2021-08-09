@@ -27,10 +27,12 @@ When the facility accept the school’s request it will send them an email which
 
 # Requirements:
 
+
+
 **login/ registration for User (with validation):**
 ------------ | 
 -We have 2 types of users:
-- ## School Users:
+***School Users:***
 -**Attributes:**
 - Name
 - City
@@ -38,7 +40,7 @@ When the facility accept the school’s request it will send them an email which
 - Email
 - Telephone Number
 - Password
-## Location Users:
+***Location Users:***
 **Attributes:**
 - Name
 - City
@@ -48,14 +50,20 @@ When the facility accept the school’s request it will send them an email which
 - Password
 - Capacity
 
+
+
 **Home page:**
 ------------ | 
 The homepage contains header (logo, home, services, about us, username, logout) Footer (copyrights, contact us, about us). In the main body we will have image carousel that alternate clickable locations photos.
 
 
+
+
 **Location page:**
 ------------ | 
 -When you click on the location’s photo (on the home page) it will redirect you to the Location page which contains ( a school can make multiple requests for one location) a small paragraph about this place. And a link that redirects you to request a reservation form.
+
+
 
 **Reservation Form:**
 ------------ | 
@@ -63,6 +71,8 @@ The homepage contains header (logo, home, services, about us, username, logout) 
 	a. date
 	b. number of visitors
 	c. status : pending by default
+
+
 
 **School Profile:**
 ------------ | 
@@ -72,8 +82,9 @@ The homepage contains header (logo, home, services, about us, username, logout) 
 -shows locations information {name, contact info. .}.
 -shows schools requests.
 -location can accept or reject schools request.
+
+
 **Support Chat:**
------------- | 
 - Users (School/ Location) can contact Nozhas support team – who are available 24/ 7) Socket.io will be used to build the support chat. 
 
 
