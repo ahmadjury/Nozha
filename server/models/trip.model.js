@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = new mongoose.Schema;
 require("./resort.model")
-const schoolSchema =  new mongoose.Schema({
+const tripSchema =  new mongoose.Schema({
     
     name: {
         type: String,
-        required: [true, "Name is required"],
+        required: [true, "School name is required"],
         minlength: [5, "school name must be at least 5 characters long"]
     },
 	city: {
@@ -13,11 +13,7 @@ const schoolSchema =  new mongoose.Schema({
         required: [true, "City is required"],
         minlength: [5, "City name must be at least 5 characters long"]
     },
-	licenseNumber: {
-        type: Number,
-        required: [true, "LicenseNumber is required"],
-        min: [8, "8 characters long"],
-    },
+
     email: {
         type: String,
         trim: true,
@@ -34,33 +30,17 @@ const schoolSchema =  new mongoose.Schema({
         min: [9, "9 characters long"],
         
     },
-	password: {
-        type: String,
-        required: [true, "Password is required"],
-        minlength: [9, "Password  must be at least 9 characters long"]
-    },
 
-    dateOfReservation: {
+    dateOfReservation: { // validation date
         type:Date,
     },
-    numberOfStudents: {
+    numberOfStudents: { // validation number
         type: Number,
     },
 
-    resorts:[{type:mongoose.Schema.Types.ObjectId, ref: 'Resort' }]
-    // resorts:[{type:Schema.Types.ObjectId, ref: 'Resort' }]
-   
-
+    resort:{ type:mongoose.Schema.Types.ObjectId, ref: 'Resort' }
 },
-
-{timestamps:true}
-	
-
-   );
+{ timestamps: true });
 
 
-   module.exports = mongoose.model('School',schoolSchema);
-   
-  
-
- 
+module.exports = mongoose.model('Trip',tripSchema);
