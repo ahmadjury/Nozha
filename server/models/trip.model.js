@@ -16,12 +16,11 @@ const tripSchema =  new mongoose.Schema({
 
     email: {
         type: String,
-        trim: true,
-        lowercase: true,
-        unique: true,
-        required: 'Email address is required',
+        // trim: true,
+        // lowercase: true,
+        // required:[true,'Email address is required'] ,
         // validate: [validateEmail, 'Please fill a valid email address'],
-        match: [/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/, 'Please fill a valid email address']
+        // match: [/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/, 'Please fill a valid email address']
     },
 
 	telephoneNumber: {
@@ -36,6 +35,10 @@ const tripSchema =  new mongoose.Schema({
     },
     numberOfStudents: { // validation number
         type: Number,
+    },
+    status: {
+        type: String,
+        default: "pending"
     },
 
     resort:{ type:mongoose.Schema.Types.ObjectId, ref: 'Resort' }

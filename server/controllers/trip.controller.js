@@ -14,21 +14,32 @@ const Resort = require('../models/resort.model')
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
 	 
-	module.exports.createNewTrip = (req, res) => {
+	module.exports.createNewTrip = async (req, res) => {
 		console.log(req.body);
-		Trip.create(req.body) // push to trips array 
-		 .then(trip=> {
-            Resort.findOneAndUpdate({'_id':id},{ 
-                $push:{trips: trip}
-             })
-			 .catch(err => res.json(err));
-             return res.json(person)
-        })
-        .catch(err => res.status(400).json(err))
+		const {name, city, email, telephoneNumber,dateOfReservation , numberOfStudents,resort}=req.body
+		try{
+			let trip = await Trip.create({name, city, email, telephoneNumber,dateOfReservation , numberOfStudents,resort})
+			console.log(trip)
+			let resortUpdated = await  Resort.findOneAndUpdate({'_id':resort},{$push:{trips: trip} }, {new:true})
+			res. json(trip)
+		}
+		catch (err){
+			console.log(err)
+		res.status(400).json(err)
+		}
 }
 	module.exports.deleteAnExistingTrip = (req, res) => {
 		Trip.deleteOne({ _id: req.params.id })
 			.then(result => res.json({ result: result }))
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
+	}
+	module.exports.updateExistingTrip = (req, res) => {
+		Trip.findOneAndUpdate(
+			{ _id: req.params.id },
+			req.body,
+			{ new: true, runValidators: true }
+		)
+			.then(updatedTrip => res.json({updatedTrip }))
+			.catch(err => res.status(400).json(err));
 	}
 

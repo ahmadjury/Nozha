@@ -22,15 +22,15 @@ const School = require('../models/trip.model')
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
 
-	module.exports.updateExistingResort = (req, res) => {
-		Resort.findOneAndUpdate(
-			{ _id: req.params.id },
-			req.body,
-			{ new: true, runValidators: true }
-		)
-			.then(updatedResort => res.json({updatedResort }))
-			.catch(err => res.status(400).json(err));
-	}
+	// module.exports.updateExistingResort = (req, res) => {
+	// 	Resort.findOneAndUpdate(
+	// 		{ _id: req.params.id },
+	// 		req.body,
+	// 		{ new: true, runValidators: true }
+	// 	)
+	// 		.then(updatedResort => res.json({updatedResort }))
+	// 		.catch(err => res.status(400).json(err));
+	// }
 
 
 	
