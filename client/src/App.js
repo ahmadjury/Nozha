@@ -4,6 +4,7 @@ import  SignUp  from './views/SignUp';
 import {Router} from '@reach/router'
 import Main from './views/Main';
 import SignIn from './views/Signin';
+import CreateTrip from './views/CreateTrip'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Main path="/" />
       <SignUp  path ="/login"/>
       <SignIn path = "/Signin"/>
+      <CreateTrip  path ="/newtrip" />
       </Router> 
     </div>
   );

@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import CardActions from '@material-ui/core/CardActions';
 import {makeStyles} from "@material-ui/core/styles"
+import { Link, navigate } from '@reach/router';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
   export default function Album() {
   const classes = useStyles();
 
+  const handleClick =()=> {
+    navigate("/newtrip");
+  }
+
   return (
 
 
@@ -55,9 +60,10 @@ const useStyles = makeStyles((theme) => ({
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" onClick={handleClick} >
                       View
                     </Button>
+                  
                     <Button size="small" color="primary">
                       Edit
                     </Button>
