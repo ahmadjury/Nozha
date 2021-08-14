@@ -41,6 +41,7 @@ const tripSchema =  new mongoose.Schema({
         default: "pending"
     },
 
+
     resort:{ type:mongoose.Schema.Types.ObjectId, ref: 'Resort' }
 },
 { timestamps: true });

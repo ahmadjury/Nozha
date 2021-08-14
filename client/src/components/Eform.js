@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from 'react'
-import image from '../components/image/trip.jpg';
+// import image from '../components/image/trip.jpg';
 import axios from 'axios';
 import { Link, navigate } from '@reach/router';
 
@@ -9,8 +9,9 @@ const Eform = (props) => {
     const [city, setCity] = useState("");
     const [email, setEmail] = useState("")
     const [telephoneNumber, setTelephoneNumber] = useState()
-    const [dateOfReservation, setDateOfReservation] = useState()
-    const [numberOfStudents, setNumberOfStudents] = useState()
+    const [capacity, setCapacity] = useState()
+    const [description, setDescription] = useState()
+    const [picture, setPicture] = useState()
     const id = props.id
     
     useEffect(() => {
@@ -21,8 +22,9 @@ const Eform = (props) => {
                 setCity(res.data.city);
                 setEmail(res.data.email);
                 setTelephoneNumber(res.data.telephoneNumber);
-                setDateOfReservation(res.data.dateOfReservation);
-                setNumberOfStudents(res.data.numberOfStudents);
+                setCapacity(res.data.capacity);
+                setDescription(res.data.description);
+                setPicture(res.data.picture)
             })
     }, [id])
     const updateresort = e => {
@@ -32,11 +34,12 @@ const Eform = (props) => {
             city,
             email,
             telephoneNumber,
-            dateOfReservation,
-            numberOfStudents
+            capacity,
+            description,
+            picture
 
         })
-            .then(res => console.log(res));
+            .then(res => navigate("/"));
     }
  
 
@@ -46,7 +49,7 @@ const Eform = (props) => {
             <h2>Update Resort</h2>
             <form onSubmit={updateresort}>
                 
-                <p  >
+                <p >
                     <label>Name</label><br />
                     <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}}  type="text" onChange={(e) => setName(e.target.value)} value={name} />
                 </p>
@@ -63,12 +66,16 @@ const Eform = (props) => {
                     <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
                 </p>
                 <p >
-                    <label>Date of reservation</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="date" required onChange={(e) => setDateOfReservation(e.target.value)} value={dateOfReservation} />
+                    <label>Capacity</label><br />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setCapacity(e.target.value)} value={capacity} />
                 </p>
                 <p >
-                    <label>Number of student</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setNumberOfStudents(e.target.value)} value={numberOfStudents} />
+                    <label>Description</label><br />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setDescription(e.target.value)} value={description} />
+                </p>
+                <p >
+                    <label>Resort Image</label><br />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setPicture(e.target.value)} value={picture} />
                 </p>
                 <p >
                     <label></label><br />

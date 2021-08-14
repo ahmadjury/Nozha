@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 //import Avatar from '@material-ui/core/avatar';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
+// import Box from '@material-ui/core/Box';
 // import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -43,46 +43,65 @@ const useStyles = makeStyles((theme) => ({
 export default function SignUp(props) {
   const classes = useStyles();
   const [errors, setErrors] = useState([])
-    const [task, setTask] = useState([])
+  const [task, setTask] = useState([])
 
-    const formFunction = (task) => {
-        console.log("i am i the hpost method")
-        axios.post("http://localhost:8000/api/register", task)
-        .then(res=>{
-            console.log(res.data)
-            setTask(res.data);
-            navigate("/Signin")
+    // const formFunction = (task) => {
+    //     console.log("i am i the hpost method")
+    //     axios.post("http://localhost:8000/api/register", task)
+    //     .then(res=>{
+    //         console.log(res.data)
+    //         setTask(res.data);
+    //         navigate("/Signin")
 
 
-    }) 
-        .catch(err=>{
-            console.log(err.response.data.errors)
-                // const errorResponse = err.response.data.errors; // Get the errors from err.response.data
-                // const errorArr = []; // Define a temp error array to push the messages in
-                // for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
-                //     errorArr.push(errorResponse[key].message)
-                // }
-                // // Set Errors
-                // setErrors(errorArr);
-            })
+    // }) 
+    //     .catch(err=>{
+    //         console.log(err.response.data.errors)
+    //             // const errorResponse = err.response.data.errors; // Get the errors from err.response.data
+    //             // const errorArr = []; // Define a temp error array to push the messages in
+    //             // for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+    //             //     errorArr.push(errorResponse[key].message)
+    //             // }
+    //             // // Set Errors
+    //             // setErrors(errorArr);
+    //         })
 
-    }
+    // }
 
-  let {label1,label2,label3,label4,label5,label6,label7,label8,formFun ,buttonValue} =props
+  // let {label1,label2,label3,label4,label5,label6,label7,label8,formFun ,buttonValue} =props
 
   const [name, setname] = useState("")
   const [city, setcity] = useState("")
   const [email, setemail] = useState("")
   const [telephoneNumber, settelephonenumber] = useState()
-  const [password, setpassword] = useState("")
-  const [confirmPassword, setconfirmpassword] = useState("")
+  // const [password, setpassword] = useState("")
+  // const [confirmPassword, setconfirmpassword] = useState("")
   const [capacity, setcapacity] = useState()
   const [description, setdescription] = useState("")
+  const [picture, setPicture] = useState("")
 
   const submitHandler = (e) => {
     e.preventDefault();
-    formFun({name,city,email,telephoneNumber, password,capacity,description,confirmPassword});
+    axios.post("http://localhost:8000/api/resort/new",
+    name,
+    city,
+    email,
+    telephoneNumber,
+    capacity,
+    description,
+    picture)
+    .then(res=>navigate("/"))
+    .catch(err=>{
+    
+        const errorResponse = err.response.data.errors; 
+        const errorArr = []; 
+        for (const key of Object.keys(errorResponse)) { 
+            errorArr.push(errorResponse[key].message)
+        }
+        setErrors(errorArr);
+    })  
 }
+
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -98,7 +117,7 @@ export default function SignUp(props) {
             <Grid item xs={12} sm={6}>
               <TextField 
                 autoComplete="fname"
-                label= {label1}
+                label= "Name"
                 onChange={e => setname(e.target.value)}
                 name="firstName"
                 variant="outlined"
@@ -111,7 +130,7 @@ export default function SignUp(props) {
             <Grid item xs={12} sm={6}>
               <TextField
                 variant="outlined"
-                label= {label2}
+                label= "City"
                 onChange={e => setcity(e.target.value)}
                 required
                 fullWidth
@@ -123,7 +142,7 @@ export default function SignUp(props) {
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                label= {label3}
+                label= "Email"
                 onChange={e => setemail(e.target.value)}
                 required
                 fullWidth
@@ -135,7 +154,7 @@ export default function SignUp(props) {
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                label= {label4}
+                label= "Telephone Number"
                 onChange={e => settelephonenumber(e.target.value)}
                 required
                 fullWidth
@@ -145,7 +164,7 @@ export default function SignUp(props) {
                 autoComplete="Phone-no."
               />
             </Grid>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 label= {label5}
@@ -157,8 +176,8 @@ export default function SignUp(props) {
                 id="password"
                 autoComplete="current-password"
               />
-            </Grid>
-            <Grid item xs={12}>
+            </Grid> */}
+            {/* <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 label= {label8}
@@ -170,11 +189,11 @@ export default function SignUp(props) {
                 id="confirmpassword"
                 autoComplete="current-password"
               />
-            </Grid>
+            </Grid> */}
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                label= {label6}
+                label= "Capacity"
                 onChange={e => setcapacity(e.target.value)}
                 required
                 fullWidth
@@ -187,14 +206,25 @@ export default function SignUp(props) {
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                label= {label7}
+                label= "Description"
                 onChange={e => setdescription(e.target.value)}
                 required
                 fullWidth
                 name="description"
                 type="description"
                 id="description"
-                autoComplete="current-password"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                label= "Picture"
+                onChange={e => setPicture(e.target.value)}
+                required
+                fullWidth
+                name="picture"
+                type="picture"
+                id="picture"
               />
             </Grid>
             <Grid item xs={12}>

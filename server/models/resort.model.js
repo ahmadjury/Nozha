@@ -5,7 +5,7 @@ const resortSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Name is required"],
-        minlength: [5, "school name must be at least 5 characters long"]
+        minlength: [5, "Resort name must be at least 5 characters long"]
     },
 	city: {
         type: String,
@@ -28,11 +28,11 @@ const resortSchema = new mongoose.Schema({
         required: [true, "TelephoneNumber is required"],
         min: [9, "9 characters long"], 
     },
-	password: {
-        type: String,
-        required: [true, "Password is required"],
-        minlength: [9, "Password  must be at least 9 characters long"]
-    },
+	// password: {
+    //     type: String,
+    //     required: [true, "Password is required"],
+    //     minlength: [9, "Password  must be at least 9 characters long"]
+    // },
 	capacity: {
         type: Number
     },
@@ -41,6 +41,9 @@ const resortSchema = new mongoose.Schema({
         required: [true, "Password is required"],
         minlength: [20, "description  must be at least 20 characters long"],
         maxlength: [150, "description  must be at most 150 characters long"]
+    },
+    picture: {
+        type:String,
     },
     trips:[{  type: mongoose.Schema.Types.ObjectId, ref: 'Trip' }]
 },

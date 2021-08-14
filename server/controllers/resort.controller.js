@@ -11,11 +11,17 @@ const School = require('../models/trip.model')
 			.then(oneSingleResort => res.json( oneSingleResort))
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
+	// module.exports.createNewResort = (req, res) => {
+	// 	Resort.create(req.body)
+	// 		.then(newlyCreatedResort => res.json(newlyCreatedResort))
+	// 		.catch(err => res.json({ message: 'Something went wrong', error: err }));
+	// }
 	module.exports.createNewResort = (req, res) => {
-		Resort.create(req.body)
-			.then(newlyCreatedResort => res.json(newlyCreatedResort))
-			.catch(err => res.json({ message: 'Something went wrong', error: err }));
-	}
+        const {name,city,email,telephoneNumber,capacity,description,picture} = req.body;
+        Resort.create(name,city,email,telephoneNumber,capacity,description,picture)
+            .then(newlyCreatedResort => res.json(newlyCreatedResort))
+            .catch(err => res.json({ message: 'Something went wrong', error: err }));
+    }
 	module.exports.deleteAnExistingResort = (req, res) => {
 		Resort.deleteOne({ _id: req.params.id })
 			.then(result => res.json({ result: result }))
