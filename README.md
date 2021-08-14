@@ -141,7 +141,7 @@ The homepage contains header (logo, home, services, about us, username, logout) 
 ## Team members :
 ◻️ *Ahmad Jury* 
 
-◻️ *Dara Rawaghba*
+◻️ *Dara Rawagba*
 
 ◻️ *Fatima Alheeh*
 
