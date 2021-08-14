@@ -51,38 +51,38 @@ const Eform = (props) => {
                 
                 <p >
                     <label>Name</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}}  type="text" onChange={(e) => setName(e.target.value)} value={name} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}}  type="text" onChange={(e) => setName(e.target.value)} value={name} />
                 </p>
                 <p >
                     <label>City</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
                 </p>
                 <p >
                     <label>Email</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
                 </p>
                 <p >
                     <label>Tel</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
                 </p>
                 <p >
                     <label>Capacity</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setCapacity(e.target.value)} value={capacity} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="number" required onChange={(e) => setCapacity(e.target.value)} value={capacity} />
                 </p>
                 <p >
                     <label>Description</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setDescription(e.target.value)} value={description} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="text" required onChange={(e) => setDescription(e.target.value)} value={description} />
                 </p>
                 <p >
                     <label>Resort Image</label><br />
-                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setPicture(e.target.value)} value={picture} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:400}} type="text" required onChange={(e) => setPicture(e.target.value)} value={picture} />
                 </p>
                 <p >
                     <label></label><br />
                     <input style={{borderRadius:15,fontSize:20,visibility:"hidden"}} type="text"     />
                 </p>
-                <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:800}} type="submit" value="Update Resort" />
-                <Link style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,border:"3px solid  #E10050",fontWeight:800}} to ={`/resorts/${id}`} >show trips</Link>
+                <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:800}} type="submit" value="Update Resort" />
+                <Link style={{backgroundColor:"whitesmoke",padding:10,borderRadius:3,border:"3px solid  #2C2C2C",fontWeight:800}} to ={`/resorts/${id}`} >show trips</Link>
             </form>
             
         </div>
