@@ -9,6 +9,7 @@ import AboutUs  from './views/AboutUs'
 import  LogoBar  from './components/LogoBar';
 import Eform from './components/Eform';
 import Resort from './components/Resort';
+import Successful from './views/Successful';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Eform  path ="/edittrip/:id" />
       <AboutUs path="/aboutus"/>
       <Resort path="/resorts/:id"/>
+      <Successful path="/success" />
       </Router> 
       
     </div>

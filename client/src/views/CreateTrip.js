@@ -11,7 +11,7 @@ const CreateTrip = props => {
     const createProject = (opject) => {
         axios.post('http://localhost:8000/api/trip/new', opject)
             .then(res=>console.log(opject))
-            .then(res => navigate('/'))
+            .then(res => navigate('/success'))
             .catch(err => {
                 const errorResponse = err.response.data.errors;
                 const errorArr = [];
