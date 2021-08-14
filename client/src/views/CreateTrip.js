@@ -24,8 +24,9 @@ const CreateTrip = props => {
     return (
         <div>
             <Form onSubmitProp={createProject} id={props.id} />
-            {errors.map((err, index) => <p key={index} style={{ color: "red",float:"left" }}>{err}</p>)}
-            <Link style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,border:"3px solid  #E10050",fontWeight:800}} to = "/">Back to Dashboard</Link>
+            {errors.map((err, index) => <p key={index} style={{ color: "red",float:"left" }}>{err}</p>)}<br/>
+            <br/>
+            <Link style={{backgroundColor:"whitesmoke",padding:10,borderRadius:3,fontWeight:800}} to = "/">Back to Dashboard</Link>
         </div>
     );
 };
