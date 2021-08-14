@@ -17,40 +17,40 @@ const Form = (props) => {
 
     }
     return (
-        < div style= {{backgroundImage:"url(${image})"}}>
-            <h1> Trip Manager </h1>
+        < div >
+            <h1> Resort Manager </h1>
             <h2>reserve a resort</h2>
             <form onSubmit={onSubmitHandler}>
                 
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>Name</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" onChange={(e) => setName(e.target.value)} value={name} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="text" onChange={(e) => setName(e.target.value)} value={name} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>City</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>Email</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>Tel</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>Date of reservation</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="date" required onChange={(e) => setDateOfReservation(e.target.value)} value={dateOfReservation} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="date" required onChange={(e) => setDateOfReservation(e.target.value)} value={dateOfReservation} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  whitesmoke",fontWeight:800}}>
                     <label>Number of student</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="number" required onChange={(e) => setNumberOfStudents(e.target.value)} value={numberOfStudents} />
+                    <input style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}} type="number" required onChange={(e) => setNumberOfStudents(e.target.value)} value={numberOfStudents} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label></label><br />
                     <input style={{borderRadius:15,fontSize:20,visibility:"hidden"}} type="text"     />
                 </p>
-                <input  style={{borderRadius:15,fontSize:20}} type="submit" value="Plan Project" />
+                <input  style= {{backgroundImage:"url(${image})"}} style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:2,border:"2px solid  #E10050",fontWeight:800}} type="submit" value="Plan Project" />
             </form>
         </div>
     );

@@ -12,14 +12,17 @@ const Resort = (props) => {
         })
     },[props.id])
     return (
-        <div>
+        <div style={{display:"flex",justifyContent:"center",color:"white",marginBottom:80,backgroundColor:"white"}}>
+            <div style={{ width:"40%"}}>
               {loaded && trips.map((trip,Idx) => 
-              <>
-                  <p>{trip.name}</p>
-                  <p>{trip.dateOfReservation}</p>
-                  <p>{trip.dateOfReservation}</p>
-                  </>
+              <div style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,margin:30,border:"10px solid  #E10050",fontWeight:800}}>
+                  <p style={{color:"#2C98F0"}}>School: {trip.name}</p>
+                  <p style={{color:"gray",fontWeight:500}}>Reservation Date: {trip.dateOfReservation}</p>
+                  <p style={{color:"black",fontWeight:500}}>Students attending: {trip.numberOfStudents}</p>
+                  <p style={{color:"#E10050",fontWeight:500}}>Status: {trip.status}</p>
+                  </div>
               )}
+        </div>
         </div>
     )
 }

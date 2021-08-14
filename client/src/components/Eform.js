@@ -42,41 +42,42 @@ const Eform = (props) => {
 
     return (
         < div style= {{backgroundImage:"url(${image})"}}>
-            <h1> Trip Manager </h1>
+            <h1> Resort Manager </h1>
             <h2>Update Resort</h2>
             <form onSubmit={updateresort}>
                 
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p  >
                     <label>Name</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" onChange={(e) => setName(e.target.value)} value={name} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}}  type="text" onChange={(e) => setName(e.target.value)} value={name} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label>City</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setCity(e.target.value)} value={city} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label>Email</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="text" required onChange={(e) => setEmail(e.target.value)} value={email} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label>Tel</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setTelephoneNumber(e.target.value)} value={telephoneNumber} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label>Date of reservation</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="date" required onChange={(e) => setDateOfReservation(e.target.value)} value={dateOfReservation} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="date" required onChange={(e) => setDateOfReservation(e.target.value)} value={dateOfReservation} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label>Number of student</label><br />
-                    <input style={{borderRadius:15,fontSize:20}} type="number" required onChange={(e) => setNumberOfStudents(e.target.value)} value={numberOfStudents} />
+                    <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:400}} type="number" required onChange={(e) => setNumberOfStudents(e.target.value)} value={numberOfStudents} />
                 </p>
-                <p style={{borderRadius:15,fontSize:20}}>
+                <p >
                     <label></label><br />
                     <input style={{borderRadius:15,fontSize:20,visibility:"hidden"}} type="text"     />
                 </p>
-                <input  style={{borderRadius:15,fontSize:20}} type="submit" value="Update Resort" />
+                <input style={{backgroundColor:"whitesmoke",padding:10,marginRight:20,borderRadius:30,border:"3px solid  #2C98F0",fontWeight:800}} type="submit" value="Update Resort" />
+                <Link style={{backgroundColor:"whitesmoke",padding:10,borderRadius:30,border:"3px solid  #E10050",fontWeight:800}} to ={`/resorts/${id}`} >show trips</Link>
             </form>
-            <Link to ={`/resorts/${id}`} >show trips</Link>
+            
         </div>
     );
 };

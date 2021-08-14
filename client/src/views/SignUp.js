@@ -12,7 +12,7 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import axios from 'axios';
 
 
 
@@ -41,6 +41,32 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp(props) {
   const classes = useStyles();
+  const [errors, setErrors] = useState([])
+    const [task, setTask] = useState([])
+
+    const formFunction = (task) => {
+        console.log("i am i the hpost method")
+        axios.post("http://localhost:8000/api/register", task)
+        .then(res=>{
+            console.log(res.data)
+            setTask(res.data);
+            navigate("/Signin")
+
+
+    }) 
+        .catch(err=>{
+            console.log(err.response.data.errors)
+                // const errorResponse = err.response.data.errors; // Get the errors from err.response.data
+                // const errorArr = []; // Define a temp error array to push the messages in
+                // for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+                //     errorArr.push(errorResponse[key].message)
+                // }
+                // // Set Errors
+                // setErrors(errorArr);
+            })
+
+    }
+
   let {label1,label2,label3,label4,label5,label6,label7,label8,formFun ,buttonValue} =props
 
   const [name, setname] = useState("")
