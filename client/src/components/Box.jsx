@@ -47,6 +47,11 @@ const useStyles = makeStyles((theme) => ({
     navigate("/edittrip/"+id);
     
   }
+  const handleClick3 =(e,id)=> {
+    
+    navigate("/details/"+id);
+    
+  }
 
   useEffect(() => {
     axios.get("http://localhost:8000/api/resort/")
@@ -81,6 +86,9 @@ const useStyles = makeStyles((theme) => ({
                   
                     <Button size="small" color="primary"onClick={(e)=>handleClick2(e,eachResort._id)}>
                       Edit
+                    </Button>
+                    <Button size="small" color="primary"onClick={(e)=>handleClick3(e,eachResort._id)}>
+                      Details
                     </Button>
                   </CardActions>
                 </Card>

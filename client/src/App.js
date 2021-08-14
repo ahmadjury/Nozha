@@ -10,6 +10,7 @@ import  LogoBar  from './components/LogoBar';
 import Eform from './components/Eform';
 import Resort from './components/Resort';
 import Successful from './views/Successful';
+import Details from './views/Details'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <AboutUs path="/aboutus"/>
       <Resort path="/resorts/:id"/>
       <Successful path="/success" />
+      <Details  path ="/details/:id" />
       </Router> 
       
     </div>
