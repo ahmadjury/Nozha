@@ -19,10 +19,14 @@ When the facility accept the school’s request it will send them an email which
 
 **Main Functions**
 ------------ | 
--Login & Registration 
--Show all resorts       
--Show  school's reservations
--reserve in a resort
+our functionalities:
+-A resort can register their data on the website
+-any school  can fill in a trip reservation form
+-the website shows all reserved trips of a resort
+-a resort can be added/edited/updated
+
+
+
 
 
 # Requirements:
@@ -31,18 +35,18 @@ When the facility accept the school’s request it will send them an email which
 
 **login/ registration for User (with validation):**
 ------------ | 
--We have 2 types of users:
-**School Users:**
+-We have 2 Models:
+**Trip model(for schools):**
 
 
 -**Attributes:**
 - Name
 - City
-- License Number (should be 9 unique numbers)
 - Email
 - Telephone Number
 - Password
-**Location Users:**
+- ...
+**Resort model:**
 **Attributes:**
 - Name
 - City
