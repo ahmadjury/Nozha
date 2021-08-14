@@ -19,7 +19,9 @@ export default function DisabledTabs() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "lightblue"
+          marginBottom:40,
+
+          // backgroundColor: "lightblue"
         }}>
         <Paper square>
             <Tabs
@@ -31,11 +33,17 @@ export default function DisabledTabs() {
             
             >
                 <Link to="/"><Tab label="Home" /></Link>
-                <Link to="/about"><Tab label="About" /></Link>
+                
             
                 <Link to="/login">
                   <Tab label="Sign In/Up" />  
                 </Link>
+                <Link to="/aboutus ">
+                  <Tab label="About" />  
+                </Link>
+            
+                <a href="https://naughty-brattain-00bd53.netlify.app/chats "><Tab label="Chat"/>  </a>
+           
                 
             </Tabs>
         </Paper>

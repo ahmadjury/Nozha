@@ -50,4 +50,5 @@ const resortSchema = new mongoose.Schema({
 
 );
 
+
 module.exports  = mongoose.model('Resort',resortSchema);

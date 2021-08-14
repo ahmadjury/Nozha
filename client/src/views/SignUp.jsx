@@ -60,7 +60,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="firstName"
-                label="First Name"
+                label="Resort Name"
                 autoFocus
               />
             </Grid>

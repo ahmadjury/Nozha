@@ -8,7 +8,8 @@ module.exports = function(app){
     app.delete('/api/trip/:id', TripController.deleteAnExistingTrip);
     app.get('/api/resort', ResortController.findAllResorts);
     app.get('/api/resort/:id', ResortController.findOneSingleResort);
-    // app.put('/api/resort/:id', ResortController.updateExistingResort);
+    app.put('/api/resort/edit/:id', ResortController.updateExistingResort);
     app.post('/api/resort/new', ResortController.createNewResort);
     app.delete('/api/resort/:id', ResortController.deleteAnExistingResort);
+    app.get('/api/restrips/:id',ResortController.getResortTrips);
 	}

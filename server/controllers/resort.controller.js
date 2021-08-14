@@ -3,12 +3,12 @@ const School = require('../models/trip.model')
 
 	module.exports.findAllResorts = (req, res) => {
 		Resort.find()
-			.then(allResort => res.json({ allResort }))
+			.then(allResort => res.json( allResort ))
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
 	module.exports.findOneSingleResort = (req, res) => {
 		Resort.findOne({ _id: req.params.id })
-			.then(oneSingleResort => res.json({ oneSingleResort}))
+			.then(oneSingleResort => res.json( oneSingleResort))
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
 	module.exports.createNewResort = (req, res) => {
@@ -22,15 +22,21 @@ const School = require('../models/trip.model')
 			.catch(err => res.json({ message: 'Something went wrong', error: err }));
 	}
 
-	// module.exports.updateExistingResort = (req, res) => {
-	// 	Resort.findOneAndUpdate(
-	// 		{ _id: req.params.id },
-	// 		req.body,
-	// 		{ new: true, runValidators: true }
-	// 	)
-	// 		.then(updatedResort => res.json({updatedResort }))
-	// 		.catch(err => res.status(400).json(err));
-	// }
+	module.exports.updateExistingResort = (req, res) => {
+		Resort.findOneAndUpdate(
+			{ _id: req.params.id },
+			req.body,
+			{ new: true, runValidators: true }
+		)
+			.then(updatedResort => res.json({updatedResort }))
+			.catch(err => res.status(400).json(err));
+	}
+
+	module.exports.getResortTrips = (request, response) => {
+		Resort.findOne({_id:request.params.id}).populate('trips')
+			.then(category => response.json(category))
+			.catch(err => response.json(err))
+	}
 
 
 	

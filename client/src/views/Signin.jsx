@@ -77,7 +77,8 @@ export default function SignIn() {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
+          <button style={{width:100,height:30,borderRadius:15,backgroundColor:"#E10050", borderColor:"#E10050", color:"white",}} >Login</button>
+          {/* <Button
             type="submit"
             fullWidth
             variant="contained"
@@ -85,7 +86,7 @@ export default function SignIn() {
             className={classes.submit}
           >
             Sign In
-          </Button>
+          </Button> */}
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
